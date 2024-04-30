@@ -12,36 +12,36 @@
 <body>
     <section>
         <div class="container mx-4">
-            <div class="text-center"><img class="img img-fluid" src="./images/padlock.png" alt="Photo"></div>
+            <div class="text-center"><img src="./images/padlock.png" alt="logo"></div>
             <p class="mt-4">Password<br><span>Generator</span></p>
-            <div class="p-header input-group mt-4 mb-3">
+            <div class="header input-group mt-4 mb-3">
                 <input type="text" id="password" class="form-control" placeholder="Generated password will appear here !">
-                <button class="copy btn btn-outline-secondary" id="copy" type="button" id="button-addon2">Copy</button>
+                <button type="button" id="copy" class="btn btn-outline-secondary">Copy</button>
             </div>
-            <p class="note mt-3 mb-2 py-2" id="note">Please, first generate your password !</p>
-            <div class="p-bodyr">
+            <p class="mb-3" id="note">Please, first generate your password !</p>
+            <div>
                 <div class="form-filed">
-                    <input type="number" id="p-length"  class="form-control" value="12" min="6" max="30">
-                    <label class="p-length" for="p-length">Password length</label>
+                    <input type="number" id="pass-length" class="form-control" value="12" min="6" max="30">
+                    <label>Password length</label>
                 </div>
-                <div class="form-check form-filed">
-                    <input class="form-check-input color" id="p-uppercase" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label p-uppercase" for="p-uppercase"> Include uppercase letters</label>
+                <div class="form-filed">
+                    <input type="checkbox" id="pass-uppercase" class="form-check-input checkbox-color" checked>
+                    <label>Include uppercase letters</label>
                 </div>
-                <div class="form-check form-filed">
-                <input class="form-check-input color"  id="p-lowercase" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label p-lowercase" for="p-lowercase">Include lowercase letters</label>
+                <div class="form-filed">
+                    <input type="checkbox" id="pass-lowercase" class="form-check-input checkbox-color">
+                    <label>Include lowercase letters</label>
                 </div>
-                <div class="form-check form-filed">
-                <input class="form-check-input color"  id="p-numbers" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label p-numbers" for="p-numbers">Include numbers</label>
+                <div class="form-filed">
+                    <input type="checkbox" id="pass-numbers" class="form-check-input checkbox-color">
+                    <label>Include numbers</label>
                 </div>
-                <div class="form-check form-filed">
-                <input class="form-check-input color"  id="p-symbols" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label p-symbols" for="p-symbols">Include symbols</label>
+                <div class="form-filed">
+                    <input type="checkbox" id="pass-symbols" class="form-check-input checkbox-color">
+                    <label>Include symbols</label>
                 </div>
                 <div class="text-center">
-                    <button class="submit mt-4 py-2 px-4 btn btn-outline-secondary" id="submit" type="button" id="button-addon2">Generate password</button>
+                    <button type="button" id="submit" class="mt-4 py-2 px-4 btn btn-outline-secondary">Generate password</button>
                 </div>
             </div>
         </div>

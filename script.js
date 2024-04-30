@@ -4,25 +4,25 @@ const lCase = "abcdefghijklmnoprstuvwxyz"
 const number = "1234567890"
 const symbols = "!@#$%^&*()_+_}{|?><"
 
-const pLength = document.getElementById("p-length")
-const upperCase = document.getElementById("p-uppercase")
-const lowerCase = document.getElementById("p-lowercase")
-const numbers = document.getElementById("p-numbers")
-const symbol = document.getElementById("p-symbols")
+const pLength = document.getElementById("pass-length")
+const upperCase = document.getElementById("pass-uppercase")
+const lowerCase = document.getElementById("pass-lowercase")
+const numbers = document.getElementById("pass-numbers")
+const symbol = document.getElementById("pass-symbols")
 const submit = document.getElementById("submit")
 const password = document.getElementById("password")
 const copy = document.getElementById("copy")
+const note = document.getElementById("note");
 
 submit.addEventListener("click", () =>{
     note.style.display = 'none';
     let initialPassword = empty;
 
-    //?- jei taip : - jeigu ne
+    //?- if yes : - if no
     upperCase.checked ? (initialPassword+= uCase) : ""  
     lowerCase.checked ? (initialPassword+= lCase) : "" 
     numbers.checked ? (initialPassword+= number) : "" 
     symbol.checked ? (initialPassword+= symbols) : ""   
-
     password.value = generatePassword (pLength.value, initialPassword)
 })
 
