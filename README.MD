@@ -1,4 +1,4 @@
-# <span><img src="./images/padlock.png" alt=password-app style="height: 1em; vertical-align: middle;"></span> Password generator app
+# <span><img src="./images/padlock.png" alt=password-app style="height: 1em;"></span> Password generator app
 
 This responsive app is created with javascript & bootstrap that creates random passwords based on selected conditions.
 
